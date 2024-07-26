@@ -15,6 +15,7 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    font-size: 3vw;
 }
 
 header > h1{
@@ -41,6 +42,7 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 3vw;
 }
 
 .normal{
@@ -55,14 +57,14 @@ section{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: white;
 }
 
 .imagem > p{
     background-color: rgba(0, 0, 0, 0.411);
-    width: 200px;
-    color: white;
+    padding: 5px;
+    display: inline-block;
 }
-
 footer{
     background-color: black;
     text-align: center;
