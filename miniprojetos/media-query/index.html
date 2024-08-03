@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu responsivo</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="
+    estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho"> <!--Quando mudar de tamanho de tela em relação ao menu-->
     <header>
         <h1>Meu Site</h1>
-        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i> <!--Para aparecer o burguer do menu-->
         <menu id="itens">
             <ul>
                 <li><a href="#">Opção 01</a></li>
@@ -33,11 +35,22 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ut, accusamus cumque cum quam nulla mollitia facere fugiat! Quaerat, sit voluptate aperiam molestias exercitationem quod vero nemo dolorum nisi optio! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quas debitis veritatis similique dignissimos expedita tenetur, totam eligendi explicabo. Quidem incidunt facere dicta sapiente nulla voluptate voluptatem mollitia sunt et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolore amet doloremque sint nesciunt impedit tempora, ullam incidunt iusto quidem, illo possimus. Quasi aliquam iure repudiandae impedit obcaecati ipsum ratione.</p>
         </article>
     </main>
-    <script>
-        function clickMenu(){
+    <script> /*Configuração em JavaScript*/
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } 
+            
+            else{
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){ 
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'
             }
+
             else{
                 itens.style.display = 'block'
             }
