@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .conteiner{ /*Css para tag pai*/
+            background-color: antiquewhite;
+
+            display: flex;/*Tornar a caixa pai flexivel*/
+        }
+
+        .item{/*Css para tag filho*/
+            background-color:cornflowerblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex: auto;/*Tornar os item adaptáveis a caixa*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner"> <!--Tag pai-->
+        <div class="item">A</div> <!--Tag filho-->
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
